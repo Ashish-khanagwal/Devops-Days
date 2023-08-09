@@ -11,7 +11,8 @@ COPY package.json .
 RUN npm install
 COPY . ./ 
 
-EXPOSE 3000 
+ENV PORT 3000
+EXPOSE $PORT
 
 # CMD ["node", "index.js"]
 # It's telling Docker to run the node command with the argument index.js. The node command is used to execute JavaScript files in a Node.js runtime environment, and index.js is the file you want to run.
