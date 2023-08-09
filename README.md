@@ -1,4 +1,4 @@
-# DevOps Days Repository
+# DevOps Days
 
 Welcome to the DevOps Days repository! This repository is a hub for learning and exploring the world of DevOps and its associated tools. Whether you're a beginner looking to get started or an experienced practitioner, you'll find valuable resources and information here.
 
@@ -22,6 +22,9 @@ If you're new to DevOps or this repository, follow these steps to get started:
 Contributions are welcome and encouraged! If you have valuable resources, tutorials, or examples related to DevOps and its tools, consider contributing to this repository. Here's how you can contribute:
 
 1. Fork this repository.
+
+![fork](https://github.com/Ashish-khanagwal/Devops-Days/assets/75534912/140df75e-c4a4-4cce-b620-983c0554f2ff)
+
 2. Create a new branch: `git checkout -b feature/add-new-resource`
 3. Make your contributions.
 4. Commit your changes: `git commit -m "Add new resource on XYZ"`
@@ -36,4 +39,4 @@ This repository is available under the [MIT License](LICENSE). Feel free to use 
 
 We hope you find the DevOps Days repository helpful in your journey to mastering DevOps practices and tools. If you have any questions, concerns, or suggestions, please open an issue or reach out to us.
 
-Happy DevOps learning!
+Happy DevOps learning! 🙂 🚀 And Don't forget to give us a ⭐
