@@ -31,10 +31,6 @@ Contributions are welcome and encouraged! If you have valuable resources, tutori
 5. Push to the branch: `git push origin feature/add-new-resource`
 6. Create a pull request, explaining your changes and their significance.
 
-## License
-
-This repository is available under the [MIT License](LICENSE). Feel free to use the resources, examples, and tutorials for educational and non-commercial purposes.
-
 ---
 
 We hope you find the DevOps Days repository helpful in your journey to mastering DevOps practices and tools. If you have any questions, concerns, or suggestions, please open an issue or reach out to us.
