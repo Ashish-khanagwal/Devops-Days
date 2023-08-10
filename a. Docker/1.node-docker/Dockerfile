@@ -8,9 +8,14 @@ WORKDIR /app
 # Since we set the working directory to /app earlier, this means the package.json file from your local directory will be copied into the /app directory within the image.
 COPY package.json .
 
-RUN npm install
-COPY . ./ 
+# RUN npm install
+ARG NODE_ENV
+RUN if [ "$NODE_ENV" = "development" ]; \
+        then npm install; \
+        else npm install --only=production; \
+        fi
 
+COPY . ./ 
 ENV PORT 3000
 EXPOSE $PORT
 
