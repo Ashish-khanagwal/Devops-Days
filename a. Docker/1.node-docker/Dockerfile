@@ -17,4 +17,4 @@ EXPOSE $PORT
 # CMD ["node", "index.js"]
 # It's telling Docker to run the node command with the argument index.js. The node command is used to execute JavaScript files in a Node.js runtime environment, and index.js is the file you want to run.
 
-CMD ["npm", "run", "dev"]
+CMD ["node", "index.js"]
