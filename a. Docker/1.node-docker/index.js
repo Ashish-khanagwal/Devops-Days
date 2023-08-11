@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
   res.send("<h2>Hello World</h2>");
 });
 
-app.use("/posts", postRouter);
+app.use("/api/v1/posts", postRouter);
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => console.log(`listening on port ${port}`));
