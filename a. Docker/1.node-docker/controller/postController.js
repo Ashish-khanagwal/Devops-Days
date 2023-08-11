@@ -1,4 +1,4 @@
-const Post = require("../models/postModels");
+const Post = require("../models/postModel");
 
 exports.getAllPosts = async (req, res, next) => {
   try {
@@ -35,7 +35,7 @@ exports.getOnePost = async (req, res, next) => {
 
 exports.createPost = async (req, res, next) => {
   try {
-    const post = await Post.findById(req.body);
+    const post = await Post.create(req.body);
     res.status(200).json({
       status: "success",
       data: {

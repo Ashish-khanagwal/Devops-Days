@@ -8,6 +8,7 @@ const {
 } = require("./config/config");
 
 const postRouter = require("./routes/postRoutes");
+const userRouter = require("./routes/userRoutes");
 
 const app = express();
 
@@ -25,11 +26,14 @@ const connectWithRetry = () => {
 
 connectWithRetry();
 
+app.use(express.json());
+
 app.get("/", (req, res) => {
   res.send("<h2>Hello World</h2>");
 });
 
 app.use("/api/v1/posts", postRouter);
+app.use("/api/v1/users", userRouter);
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => console.log(`listening on port ${port}`));

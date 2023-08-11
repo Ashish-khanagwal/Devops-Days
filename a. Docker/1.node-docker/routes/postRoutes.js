@@ -1,12 +1,12 @@
 const express = require("express");
-const postController = require("../controllers/postController");
-const router = express.Router();
+
+const postController = require("../controller/postController");
+const router = new express.Router();
 
 router
   .route("/")
   .get(postController.getAllPosts)
   .post(postController.createPost);
-
 router
   .route("/:id")
   .get(postController.getOnePost)
