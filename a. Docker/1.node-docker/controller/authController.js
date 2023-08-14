@@ -1,5 +1,5 @@
 const User = require("../models/userModel");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcrypt")
 
 exports.signup = async (req, res) => {
   const { username, password } = req.body;
@@ -28,15 +28,16 @@ exports.login = async (req, res) => {
     const user = await User.findOne({ username });
 
     if (!user) {
-      return res.status(400).json({
+      return res.status(404).json({
         status: "fail",
         message: "User not found",
       });
     }
 
-    const isCorrect = bcrypt.compare(password, user.password);
+    const isCorrect = await bcrypt.compare(password, user.password);
 
     if (isCorrect) {
+      req.session.user = user,
       res.status(200).json({
         status: "success",
       });

@@ -19,5 +19,3 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=Ashish
       - MONGO_INITDB_ROOT_PASSWORD=mypassword
-  
-  
