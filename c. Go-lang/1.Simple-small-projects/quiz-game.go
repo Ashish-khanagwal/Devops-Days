@@ -33,7 +33,7 @@ func main() {
   if scanner.Scan() {
     answer := scanner.Text()
     answer = strings.ToLower(answer)
-    
+     
     if answer == "virat kohli" {
       fmt.Println("congratulations! you answered correctly and you won a chance to click a selfie with virat kohli")      
     } else if answer == "m.s dhoni" {
