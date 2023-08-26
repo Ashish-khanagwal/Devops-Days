@@ -7,7 +7,7 @@ func main() {
 
 	var ptr *int
 	fmt.Println("The value of pointer is ", ptr)
-	// It will return value as <nil> because we haven't initialized it with any value
+	// It will return value as <nil> because we haven't initialized it without any value
 	// But you've learnt how we create pointer in golang
 	// so let us initialize the variable now and check again!
 
