@@ -40,4 +40,27 @@ func main() {
 	sort.Ints(highScores)
 	fmt.Println(highScores)
 	fmt.Println(sort.IntsAreSorted(highScores))
+
+	// Modify the slice
+	highScores = append(highScores[:2], highScores[3:]...)
+	fmt.Println(highScores)
+
+	// Length & Capacity
+	fmt.Printf("The lenght of the slice highscore is: %v and The capacity is: %v\n", len(highScores), cap(highScores))
+
+	// Copying in Slice
+	source := []int{5, 6, 7}
+	destination := make([]int, len(source))
+	copy(destination, source)
+	fmt.Printf("Copied slice from source '%v' is: '%v'\n", source, destination)
+
+	// An uninitialized slice is nil
+	var num []int
+	fmt.Println(num == nil)
+
+	// remove value from slices based on index
+	// Syntax: sliceName = append(sliceName[:index], sliceName[index+1:]...)
+	// Example:
+	numbers = append(numbers[:2], numbers[3:]...)
+	fmt.Println(numbers)
 }
