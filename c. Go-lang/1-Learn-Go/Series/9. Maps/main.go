@@ -27,7 +27,7 @@ func main() {
 	// We can also create and initialize a map like this
 	// Syntax: mapName := map[keyType]valueType{key1: value1, key2: value2, key3: value3}
 	// Example:
-	ages := map[string]int{"Ashish": 22, "Manish": 21, "Nancy": 20, "Muskan": 20}
+	ages := map[string]int{"Ashish": 22, "Nidhi": 22, "Manish": 21, "Nancy": 20, "Muskan": 20}
 	fmt.Println("People with ages are: ", ages)
 
 	// Accessing the value from map
