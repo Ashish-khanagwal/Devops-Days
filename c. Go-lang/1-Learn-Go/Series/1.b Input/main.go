@@ -18,4 +18,8 @@ func main() {
 		return
 	}
 	fmt.Println("you entered: ", num)
+
+	// Method 2
+	// If we have to take multiple inputs then we can simple do this
+
 }
