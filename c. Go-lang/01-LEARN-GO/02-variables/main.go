@@ -6,20 +6,23 @@ import (
 )
 
 func main() {
-	var username = "Ashish"
-	fmt.Println("username: ", username)
-	fmt.Printf("The data type of username is: %T \n", username)
+	var age int // Declaration of the variable "Age"
+	age = 23    // Initialisation of the variable "Age"
+	fmt.Println("My age is", age)
+	fmt.Printf("Type of variable 'age' is %T\n", age)
 
-	var myname = "Ashish"
-	fmt.Println("Your name is: " + myname)
-	fmt.Printf("Data type of myname is: %T \n", myname)
+	// Println is used for printing a line of text without any formatting
+	// Printf is used used for formatted printing.
 
-	// var age int
-	// age = 30
-	// fmt.Println("Your age is: " + strconv.Itoa(age))
+	var name string = "ashish"
+	fmt.Println("My name is ", name)
+	fmt.Printf("Type of variable 'name' is %T\n", name)
 
-	var age int = 30
-	fmt.Println(age)
-	fmt.Printf("Data type of age is: %T \n", age)
-
+	// Short declaration syntax
+	car := "Wrangler"
+	fmt.Println("My favourite car is ", car)
+	fmt.Printf("Type of variable 'car' is %T\n", car)
+	year := 2026
+	fmt.Println("I'll buy this car in ", year)
+	fmt.Printf("Type of variable 'year' is %T\n", year)
 }
