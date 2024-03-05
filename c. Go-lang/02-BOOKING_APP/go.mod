@@ -1,3 +1,3 @@
-module main
+module booking-app
 
 go 1.22.0
