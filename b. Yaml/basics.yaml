@@ -1,0 +1,47 @@
+# YAML is written in key:value pairs
+app: authentication
+port: 9000
+version: 1.7
+
+# Objects in YAML
+microservices:
+  app: User-based
+  port: 3000
+  version: 1.15
+
+# List in YAML
+microservices 2:
+  - app: User-based
+    port: 3000
+    # List of versions
+    version:
+      - 1.15
+      - 1.17
+      - 1.19
+    # Boolean
+    is_admin: true
+
+# Lists in a nutshell
+
+# simple list
+fruits:
+  - apple
+  - banana
+  - cherry
+
+# list of Dictionaries/Objects
+application:
+  - is_user1_admin: true
+    version: 1.7
+  - is_user2_admin: false
+    version: 1.15
+
+# Multiline string
+multilineString: |
+  This is a multiline string,
+  this is the next line, 
+  and again this is the next line.
+
+singlelineString: >
+  This is a single line string,
+  this should stay in the single line.

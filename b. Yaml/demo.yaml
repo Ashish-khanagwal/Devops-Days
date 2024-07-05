@@ -1,0 +1,10 @@
+Details:
+  name:
+    - firstname: Ashish
+    - lastname: Khanagwal
+  age: 23
+  gender: Male
+  occupation: DevOps Engineer
+  education:
+    - Schooling: high School
+    - College: B.Tech. in Computer Science and Engineering

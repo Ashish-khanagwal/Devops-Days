@@ -1,0 +1,15 @@
+apiVersion: v1 # key-value pair
+kind: pod
+metadata: # Objects
+  name: nginx
+  labels: # Object
+    app: nginx
+spec: # Object
+  containers: # List of objects
+    - name: nginx
+      image: nginx
+      ports: # list
+        - containerPort: 80
+      volumeMounts: # List of objects
+        - name: nginx-vol
+          mountPath: /usr/nginx/html
