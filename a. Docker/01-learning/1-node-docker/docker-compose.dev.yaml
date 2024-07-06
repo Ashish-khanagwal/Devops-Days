@@ -1,4 +1,3 @@
-version: "3"
 services:
   node-app:
     build:
@@ -10,4 +9,10 @@ services:
       - /app/node_modules
     environment:
       - NODE_ENV=development
+      - MONGO_USER=ashish
+      - MONGO_PASSWORD=mypassword
     command: npm run dev
+  mongo:
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=ashish
+      - MONGO_INITDB_ROOT_PASSWORD=mypassword
