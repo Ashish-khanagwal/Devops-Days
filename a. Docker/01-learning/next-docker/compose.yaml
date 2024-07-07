@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   frontend:
     # uncomment the following line if you want to run a local instance of MongoDB
@@ -8,11 +6,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    
+
     # do port mapping so that we can access the app from the browser
     ports:
       - 3000:3000
-    
+
     # use docker compose to watch for changes and rebuild the container
     develop:
       watch:
@@ -25,11 +23,11 @@ services:
         - path: .
           target: /app
           action: sync
-    
+
     # define the environment variables
     environment:
       # we're using MongoDB atlas so we need to pass in the connection string
-      DB_URL: mongodb+srv://sujata:rnZzJjIDr3bIDymV@cluster0.hnn88vs.mongodb.net/ 
+      DB_URL: mongodb+srv://sujata:rnZzJjIDr3bIDymV@cluster0.hnn88vs.mongodb.net/
 
   # we're using MongoDB atlas so we don't need to run a local instance of MongoDB
   # but if you want to run a local instance, you can do it this way
@@ -42,6 +40,6 @@ services:
   #     - MONGO_INITDB_ROOT_PASSWORD=rnZzJjIDr3bIDymV
   #   volumes:
   #     - tasked:/data/db
-    
+
 volumes:
   tasked:
