@@ -18,8 +18,8 @@ compose-down:
 
 ### DOCKER CLI COMMANDS
 
-DOCKERCONTEXT_DIR:=../05-example-web-application/
-DOCKERFILE_DIR:=../06-building-container-images/
+DOCKERCONTEXT_DIR:=../01-Web-app/
+DOCKERFILE_DIR:=../02-building-container-images/
 
 .PHONY: docker-build-all
 docker-build-all:
