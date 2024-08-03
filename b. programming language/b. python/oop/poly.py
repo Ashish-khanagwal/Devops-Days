@@ -7,6 +7,7 @@ class MathOperations:
 math = MathOperations()
 print(math.add(1, 2))
 print(math.add(1, 4, 5))
+# print(math.add(1, 5, "hello"))
 
 # Method Overriding
 
