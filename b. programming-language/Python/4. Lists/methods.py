@@ -36,13 +36,16 @@ print(sum(num))
 print(num.count(3))
 print(num.index(3))
 
-num.sort()
-print(num)
+# num.sort()
+# print(num)
 
-num.sort(reverse=True)
-print(num)
+# num.sort(reverse=True)
+# print(num)
+#
+# num.reverse()
+# print(num)
 
-num.reverse()
+print(sorted(num, reverse=True))
 print(num)
 
 users[0:0] = ["ashish"]
@@ -51,3 +54,18 @@ print(users)
 
 users.sort(key=str.lower)
 print(users)
+
+# Copying the list
+numscopy = num.copy()
+nums2 = num[:]
+nums3 = list(num)
+
+print("")
+print(num)
+print(numscopy)
+print(nums2)
+print(nums3)
+
+# Iterating in a list
+for i in num:
+    print(i)
