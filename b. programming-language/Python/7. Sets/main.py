@@ -1,4 +1,4 @@
 line = "*************************"
 print(line)
-print("Sets".center(25))
+print("Sets".center(23))
 print(line)

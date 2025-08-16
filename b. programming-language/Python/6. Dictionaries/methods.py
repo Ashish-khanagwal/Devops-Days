@@ -20,8 +20,12 @@ print(myeleven2)
 print("")
 
 Team = {}
-Team = myeleven.copy()
-print("My eleven is copied in new empty team, and now Team is: {} ".format(Team))
+Team = myeleven2.copy()
+print("My eleven2 is copied in new empty team, and now Team is: {} ".format(Team))
+Team["at 8"] = "Arshdeep Singh"
+print(Team)
+print(myeleven2)
+
 
 # Nested Dictionaries
 students = {
@@ -36,6 +40,15 @@ students = {
 }
 print(students)
 print(students[30]["name"])
+
+print("")
+indian = {"toporder": myeleven, "middleorder": myeleven2}
+
+print(indian)
+print(indian["toporder"]["opener"])
+print(indian["toporder"]["captain"])
+print(indian["middleorder"]["at 6"])
+print("")
 
 # Converting to and from other data types
 pairs = [("a", 1), ("b", 2)]
